@@ -207,3 +207,24 @@ border-color: #f8ad47 !important;
     color: #868686;
     font-size: 38px;
 }
+/* تنسيقات مميزات المنتج */
+#stor-featured{
+    box-shadow: 0 0 15px #EEF0EA;
+    background-image: url(../images/bg_features.png);
+    background-repeat: no-repeat;
+    position: relative;
+    top: -30px;
+    background-size: auto 60%;
+    background-color: #fff;
+     padding-bottom: 35px;
+     padding-top: 25px;
+     background-position: -10px -20px;
+}
+#stor-featured .feature>img{ 
+    /* يستخدم المحدد > لتحديد الابن المباشر */
+height: 40px;
+margin-bottom: 10px;
+}
+#stor-featured .feature+.feature{
+    border-right: 1px solid #EEF0EA;
+}
