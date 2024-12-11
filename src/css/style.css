@@ -19,7 +19,7 @@ body{
 }
 /*navbar*/
 form ul.dropdown-menu[data-bs-popper] {
-    right: 400px;/* ضبط موقع القائمه المنسدله*/
+    right: 420px;/* ضبط موقع القائمه المنسدله*/
 }
 .custom-navbar{/*تنسيق القائمه*/
     border-bottom:3px solid #F7F8F3;
@@ -112,4 +112,98 @@ background-color:#ffe7ea ;
     font-size: 14px;
     margin-top: 8px;
     margin-right: 15px;
+}
+/* قسم عارض الشرائح */
+#carousel-featured{
+    background-color: #f7f8f3;
+    height:400px;
+    padding-top: 25px;
+}
+#carousel-featured .carousel-item img{
+    height: 375px;
+}
+/* تنسيقات قسم تفاصييل المنتج */
+#carousel-featured .product-details{
+    border:1px solid #DDDDDB;
+    padding: 20px;
+    position: relative;
+    top: 50px;
+    height: 200px;
+    background-color:#f7f8f3;
+}
+#carousel-featured .product-details .product-category{
+    border:1px solid #DDDDDB;
+    padding: 10px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color:#f7f8f3;
+}
+#carousel-featured .product-details h1{
+    font-weight: 700;
+    font-size: 175%;
+    margin-top: 18px;
+}
+#carousel-featured .product-details a{
+    color: #f8ad47;
+    border:1px solid #f8ad47;
+   background-color: transparent;
+   margin-top: 15px;
+}
+#carousel-featured .product-details a:hover,
+#carousel-featured .product-details a:focus,
+#carousel-featured .product-details a:active,
+#carousel-featured .product-details a:active:focus,
+#carousel-featured .product-details a:active:hover{
+border-color:#b86d07;
+color:#b86d07;
+}
+/* ملصق الخصم */
+.sale{
+   
+    background-color: #53CCD7;
+    color: #fff;
+    position: absolute;
+    
+}
+.sale.large{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    left: -15px;
+    top:-15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 130%;
+    padding: 35px;
+    line-height: 90%;
+    transform: rotate(-25deg);
+}
+.sale.large span{
+    font-size: 14px;
+}
+/* التحكم في موقع صور التنقل */
+.custom-carousel-indicators{
+    top:235px;
+    right: 41%;
+}
+/* صور التنقل في عارض الشرائح */
+.custom-carousel-indications-primary{
+    height: 70px !important;
+    width: 70px !important;
+    opacity: 1 !important;
+    border: 2px solid #DDDDDB !important;
+    margin: 0 !important;
+    margin-left: 5px !important;
+}
+.custom-carousel-indications-primary.active{
+border-color: #f8ad47 !important;
+}
+/* ازرار التنقل */
+#carousel-featured .carousel-control-prev .fa-chevron-right,
+#carousel-featured .carousel-control-next .fa-chevron-left {
+    color: #868686;
+    font-size: 38px;
 }
