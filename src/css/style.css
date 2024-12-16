@@ -228,3 +228,78 @@ margin-bottom: 10px;
 #stor-featured .feature+.feature{
     border-right: 1px solid #EEF0EA;
 }
+
+/* المنتجات الاكثر مبيعا */
+.heading{
+font-size: 24px;
+margin-bottom:25px;
+}
+.custom-thumbnail{
+    border:2px solid #EEF0EA;
+    padding:8px;
+    cursor: pointer;
+}
+.custom-thumbnail:hover{
+    border-color:#53CCD7;
+}
+.custom-thumbnail img{
+    height: 250px;
+    width: 100%;
+    max-width: 250px;
+}
+.custom-thumbnail h4{
+    font-size: 18px;
+}
+.price{
+    color:#53CCD7;
+}
+.reating{
+    color:#C2C2C2;
+}
+.reating .active{
+    color: #f3af41;
+}
+/* overlay */
+/* الحاوية card هيا الاب تحتوي على relative من بوتستراب */
+.overlay{
+    position: absolute;
+    background-color: rgba(83,204,215,0.5);
+    height: 250px;
+    width:calc(100% - 16px);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.custom-thumbnail:hover .overlay{
+    opacity: 1;
+}
+.overlay button{
+    padding:8px 5px;
+    background-color: #fff;
+    color: #53CCD7;
+}
+/* ملصق الخصم */
+.custom-thumbnail .sale{
+    padding: 5px 10px;
+    position: absolute;
+    left: 16px;
+    top: 14px;
+}
+.custom-thumbnail .sale::after{
+    content:"-";
+}
+/* ازرار التنقل */
+.carousel-custom-indicators2{
+    bottom: -70px;
+}
+.carousel-custom-indicators2 li{
+    width: 13px !important;
+    height: 13px !important;
+    margin: 2px !important;
+    background-color: #dbdbdb !important;
+}
+.carousel-custom-indicators2 li.active{
+    background-color:#565656 !important;
+}
