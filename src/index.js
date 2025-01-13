@@ -34,5 +34,38 @@ document.querySelectorAll('.color-option input[type="radio"]').forEach(item =>{
         item.parentNode.parentNode.classList.add('active')
     })
 })
+//حساب السعر الاجمالي للمنتج
+document.querySelectorAll('[data-product-qunatity]').forEach(item =>{  //جلب جميع العناصر التي تحتوي على الخاصية واعتبارها item
+    item.addEventListener('change',() =>{ //في حال اجراء اي تغير على ال item ينفذ الكود 
+          const newQuantity = item.value;//جلب القيمة الجديده لل select
+          const parent =item.closest('[data-product-info]'); //الوصول لل tr
+          const pricePerUbit=parent.getAttribute('data-product-price');// جلب القيمة من ال attribute
+          const totalPriceForProduct=newQuantity * pricePerUbit;
+          parent.querySelector('.total-price-for-product').innerHTML=totalPriceForProduct+'$';
+
+          //حساب السعر الاجمالي لسلة المشتريات
+          calculatetotalprice();    
+        })
+
+})
+//زر الحذف الخاص بالمنتج
+document.querySelectorAll('[data-remove-from-card]').forEach(item =>{
+    item.addEventListener('click',()=>{
+        item.closest('[data-product-info]').remove();
+        //من اجل تعديل السعر عند حذف احد الصفوف
+        calculatetotalprice();  
+    })
+})
+function calculatetotalprice(){
+    let totalPriceForAllProduct=0;
+          document.querySelectorAll('[data-product-info]').forEach(product =>{
+            const pricePerunite=product.getAttribute('data-product-price');
+            const qunatity=product.querySelector('[data-product-qunatity]').value;
+            const totalPriceForProduct=pricePerunite * qunatity;
+            totalPriceForAllProduct =totalPriceForAllProduct+totalPriceForProduct;
+          })
+          document.getElementById('total-price-for-all-product').innerHTML=totalPriceForAllProduct;
+}
+//year
 document.getElementById('year').innerHTML = new Date().getFullYear();
 
