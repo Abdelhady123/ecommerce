@@ -66,6 +66,59 @@ function calculatetotalprice(){
           })
           document.getElementById('total-price-for-all-product').innerHTML=totalPriceForAllProduct;
 }
+//اضهار قائمة المدن بالنسبة لكل دولة
+const citiesByCountry={
+    sa:['جدة','الرياض'],
+    eg:['القاهرة','الاسكندرية'],
+    jo:['عمان','الكرك'],
+    sy:['دمشق','حلب','درعا'],
+}
+document.querySelectorAll('select[name="country"]').forEach(item =>{
+item.addEventListener('change',() =>{
+const country=item.value //جلب الدولة التي اختارها المستخدم
+const cities=citiesByCountry[country]//جلب المدن الخاصة بالدولة
+
+document.querySelectorAll('#paymentcities option').forEach(option =>option.remove())//حذف جميع اسماء المدن
+//اضافة اختر مدينة 
+const firstOption=document.createElement('option')
+const optionText=document.createTextNode('اختر مدينة')
+firstOption.appendChild(optionText)
+firstOption.setAttribute('value','')
+firstOption.setAttribute('disabled','true')
+firstOption.setAttribute('selected','true')
+const city_options=document.getElementById('paymentcities')
+city_options.appendChild(firstOption)
+
+cities.forEach(city => {
+    const newOption=document.createElement('option')
+    const optionText=document.createTextNode(city)
+    newOption.appendChild(optionText)
+    newOption.setAttribute('value',city)
+    city_options.appendChild(newOption)
+
+})
+})
+})
+//اضهار واخفاء الحقول الخاصه بعملية الدفع حسب طريقة الدفع
+document.querySelectorAll('#form-checkout input[name="payment-method"]').forEach(item =>{
+    item.addEventListener('change', () =>{
+        const paymentMethod = item.value;
+        const creditCardInputs= document.querySelectorAll('#credit_card_info input');
+
+        if(paymentMethod === 'on_delivery'){
+            creditCardInputs.forEach(input =>{
+                input.style.display='none'
+            })
+        }
+        else{
+            creditCardInputs.forEach(input =>{
+                input.style.display='block'
+            })
+        }
+
+    })
+})
+
 //year
 document.getElementById('year').innerHTML = new Date().getFullYear();
 

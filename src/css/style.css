@@ -597,6 +597,15 @@ h1.custom-heading{
     border-color: #b9001b;
     color: #b9001b;
 }
+/* ................payment page .............. */
+.custom-input-details{
+    border-width: 2px;
+    border-radius: 13px;
+    height: 46px !important;
+    padding: 0 16px;
+    font-size: 18px;
+    width: 98%;
+}
 /* responsive design */
 @media (max-width: 575.98px) {
     /* قائمة التنقل */
