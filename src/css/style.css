@@ -656,7 +656,17 @@ transition:all 0.3s ease !important;
     background-color: #fff !important;
     border-color: #F8AD47 !important;
 }
-
+/* contact page */
+.contact-group li a {
+    text-decoration: none;
+}
+.contact-group li a span{
+    color:#555;
+    margin-right: 8px;
+}
+.contact-group li a {
+    color:#F8AD47 !important;
+}
 
 /* responsive design */
 @media (max-width: 575.98px) {
@@ -829,6 +839,10 @@ transition:all 0.3s ease !important;
 display: flex;
 justify-content: center;
 align-items: center;
+}
+/* contact page */
+.heading-margin-top{
+    margin-top: 18px;
 }
 }
 @media (min-width:768px) and (max-width:992px){
