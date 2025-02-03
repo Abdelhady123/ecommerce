@@ -1,0 +1,86 @@
+@charset "UTF-8";
+.custom-form-control, .dropdown a.custom-btn { /* مع اختر فئة تنسيق حقل البحث*/
+  border: 1px solid #EBEBEB;
+  box-shadow: none;
+  border-radius: 2px;
+  color: #868686;
+  height: 38px;
+  padding: 6px 6px 7px;
+  transition: all 0.3s ease;
+}
+
+.custom-form-control:focus {
+  border-color: rgb(184.5, 0, 27.0227272727);
+  box-shadow: 0 0 2px 0 rgb(184.5, 0, 27.0227272727);
+}
+
+.custom-btn { /*اختر فئة*/
+  border-radius: 0;
+  border-right: 0 !important;
+  height: 39px;
+}
+
+.custom-btn:hover {
+  background-color: #d4d4d4;
+  border: 1px solid #8c8c8c;
+  color: #ff3956;
+}
+
+.custom-btn:focus {
+  color: #ff3956;
+}
+
+.custom-btn-outline-warning {
+  background-color: transparent;
+  border-color: #f8ad47;
+  color: #f8ad47;
+}
+
+.custom-btn-outline-warning:hover,
+.custom-btn-outline-warning:active,
+.custom-btn-outline-warning:focus,
+.custom-btn-outline-warning:active:focus,
+.custom-btn-outline-warning:active:hover {
+  padding: 7px 20px;
+  color: rgb(184.4816753927, 109.2853403141, 7.0183246073);
+  border-radius: 2px;
+  border-color: rgb(184.4816753927, 109.2853403141, 7.0183246073);
+}
+
+.custom-btn-warning {
+  color: #000;
+  background-color: #f8ad47;
+  border-color: #f8ad47;
+}
+
+.custom-btn-warning:hover,
+.custom-btn-warning:active,
+.custom-btn-warning:focus,
+.custom-btn-warning:active:focus,
+.custom-btn-warning:active:hover {
+  color: #000;
+  background-color: rgb(184.4816753927, 109.2853403141, 7.0183246073);
+  border-color: rgb(184.4816753927, 109.2853403141, 7.0183246073);
+}
+
+.custom-btn-outline-danger {
+  background-color: transparent;
+  border-color: #ff3956;
+  color: #ff3956;
+}
+
+.custom-btn-outline-danger:hover {
+  border-color: rgb(184.5, 0, 27.0227272727);
+  color: rgb(184.5, 0, 27.0227272727);
+}
+
+.add-to-cart-btn {
+  color: #53ccd7;
+  background-color: #fff;
+  margin-top: 8px;
+  font-weight: 400;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*# sourceMappingURL=style2.css.map */

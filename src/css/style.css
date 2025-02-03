@@ -35,37 +35,18 @@ form ul.dropdown-menu[data-bs-popper] {
     box-shadow: none !important;
    
 }
-.custom-form-control,.dropdown a.custom-btn{/* مع اختر فئة تنسيق حقل البحث*/
-    border: 1px solid #EBEBEB;
-    box-shadow: none;
-    border-radius: 2px;
-    color:#868686 ;
-    height: 38px;
-    padding: 6px 6px 7px;
-    transition: all 0.3s ease;
-}
+
 input.form-control:focus {/*ازالة border shadow من حقل البحث*/
    border-color: none; 
    box-shadow: 0 0 0 ;
 }  
-.custom-form-control:focus{
 
-border-color: #C2101E;
-box-shadow: 0 0 2px 0 #C2101E;
-}
 .custom-btn{/*اختر فئة*/
     border-radius:0;
     border-right: 0 !important;
     height: 39px;
 }
-.custom-btn:hover{
-    background-color: #d4d4d4;
-    border: 1px solid #8c8c8c;
-    color:#ff3956;
-}
-.custom-btn:focus{
-    color:#ff3956;
-}
+
 .custm-dropdown-menu{/*القائمه المنسدله التي تضهر عند النقر على اختر فئه */
     border-radius: 2px;
     box-shadow: 0 2px 5px 0 #EBEBEB;
@@ -242,22 +223,7 @@ margin-bottom: 10px;
 font-size: 24px;
 margin-bottom:25px;
 }
-.custom-thumbnail{
-    border:2px solid #EEF0EA;
-    padding:8px;
-    cursor: pointer;
-}
-.custom-thumbnail:hover{
-    border-color:#53CCD7;
-}
-.custom-thumbnail img{
-    max-height: 250px;
-    width: 100%;
-    max-width: 250px;
-}
-.custom-thumbnail h4{
-    font-size: 18px;
-}
+
 .price{
     color:#53CCD7;
 }
@@ -342,18 +308,7 @@ color:#A9A9A9;
     padding: 5px 10px;
     font-size: 12;
 }
-.custom-btn-outline-warning,
-.custom-btn-outline-warning:hover,
-.custom-btn-outline-warning:active,
-.custom-btn-outline-warning:focus,
-.custom-btn-outline-warning:active:focus,
-.custom-btn-outline-warning:active:hover
-{
-    padding: 7px 20px;
-    color:#fcb9b9;
-    border-radius: 2px;
-    border-color: #fcdfdf;
-}
+
 /* footer scc */
 footer #brand-logos{
     background-color: #dbeefa;
@@ -404,19 +359,10 @@ footer #brand-logos{
     background-color: #585757;
     opacity: .6;
     border: none;
+    text-align: right;
     height: 38px;
 }
-.custom-btn-warning,
-.custom-btn-warning:hover,
-.custom-btn-warning:active,
-.custom-btn-warning:focus,
-.custom-btn-warning:active:focus,
-.custom-btn-warning:active:hover
-{
-    color:#000;
-    background-color:#f8ad47;
-    border-color: #f8ad47;
-}
+
 .newsleter form button{
     border-radius: 0px;
     border-top-left-radius:3px;
@@ -551,52 +497,16 @@ footer #brand-logos{
     height: 80px;
     border: 1px solid #EBEBEB;
 }
-.custom-table th ,
-.custom-table td{
-    padding: 15px;
-    font-size: 120%;
-    vertical-align: middle;
-    border-bottom: 1px solid #EBEBEB;
-    border-top: 1px solid #EBEBEB;
-}
-.custom-table h4{
-    font-size: 18px;
-    margin: 12px;
-}
-.custom-table th{
-    color:#C2C2C2;
-    font-weight:normal;
-}
-.custom-table th:first-child,
-.custom-table td:first-child
-{
-    width: 50%;
-}
-.custom-table th:not(:first-child),
-.custom-table td:not(:first-child){
-    text-align: center;
-}
+
 h1.custom-heading{
     font-size: 36px;
     margin-bottom: 25px;
 }
-.custom-table tfoot td{
-    border-bottom: none;
-    font-size: 150%;
-}
+
 #total-price-for-all-product{
     color:#000;
 }
-.custom-btn-outline-danger{
-    background-color: transparent;
-    border-color: #ff3956;
-    color:#ff3956;
 
-}
-.custom-btn-outline-danger:hover{
-    border-color: #b9001b;
-    color: #b9001b;
-}
 /* ................payment page .............. */
 .custom-input-details{
     border-width: 2px;
@@ -708,9 +618,7 @@ transition:all 0.3s ease !important;
     #carousel-featured .carousel-item img {
         height: 250px;
     }
-     #carousel-most-sold-alternative .custom-thumbnail img{
-            margin: auto;
-       }
+    
        /* تذيل الصفحه */
        .logo-img {
         margin-left: 25px;
@@ -740,6 +648,9 @@ transition:all 0.3s ease !important;
     }
     #carousel-featured .carousel-indicators {
         margin-right: 12%;
+    }
+    .overlay{
+        height:73%;
     }
 }
 @media (max-width: 991.98px) { 
@@ -792,17 +703,8 @@ transition:all 0.3s ease !important;
     .overlay{
         display: none;
     }
-    .add-to-cart-btn{
-        color:#868686;
-        border-color: #868686;
-        margin-top:8px;
-        font-weight: 400;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .custom-thumbnail img {
-        height: 250px;
-    }
+    
+  
     /* الماركات العالميه */
   .row-brands .carousel-inner img{
     width: 200px !important;
@@ -845,12 +747,3 @@ align-items: center;
     margin-top: 18px;
 }
 }
-@media (min-width:768px) and (max-width:992px){
-    /* الاكثر مبيعا */
-    .custom-thumbnail img{
-        height: 200px;
-    }
-   
-}
-
-

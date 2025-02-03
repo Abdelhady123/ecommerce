@@ -32,8 +32,8 @@ module.exports = {
         loader: 'html-loader',
       },
       {
-        test: /\.css$/i,
-        exclude: /bootstrap\.min\.css$/i,
+        test: /\.(sa|sc|c)ss$/,
+        exclude: /custom\.scss$/i,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
@@ -42,10 +42,11 @@ module.exports = {
             },
           },
           'css-loader',
+          'sass-loader'
         ],
       },
       {
-        test: /bootstrap\.min\.css$/i,
+        test: /custom\.scss$/i,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
@@ -54,6 +55,8 @@ module.exports = {
             },
           },
           'rtlcss-loader',
+          'sass-loader',
+
         ],
       }, //هنا
       {

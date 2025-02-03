@@ -1,0 +1,25 @@
+.custom-thumbnail{
+    border:2px solid #EEF0EA;
+    padding:8px;
+    cursor: pointer;
+    margin-bottom: 50px;
+    &:hover{
+        border-color:$brand-primary;
+    }
+    img{
+        max-height: 250px;
+        width: 100%;
+        max-width: 250px;
+        @media (max-width:767.98px){
+            height: 250px;
+            margin: auto;
+        }
+        @media (min-width:767.98px) and (max-width:991.98px){
+            height: 200px;
+        }
+    }
+    h4{
+        font-size: 18px;
+    }
+}
+
