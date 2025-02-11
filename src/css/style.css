@@ -110,6 +110,7 @@ background-color:#ffe7ea ;
 }
 #carousel-featured .carousel-item img{
     height: 375px;
+    width: 300px;
 }
 /* تنسيقات قسم تفاصييل المنتج */
 #carousel-featured .product-details{
@@ -176,7 +177,7 @@ color:#b86d07;
 /* التحكم في موقع صور التنقل */
 .custom-carousel-indicators{
     top:235px;
-    right: 41%;
+    right: 39%;
 }
 /* صور التنقل في عارض الشرائح */
 .custom-carousel-indications-primary{
@@ -569,15 +570,13 @@ transition:all 0.3s ease !important;
 /* contact page */
 .contact-group li a {
     text-decoration: none;
+    color:#F8AD47 !important;
+
 }
 .contact-group li a span{
     color:#555;
     margin-right: 8px;
 }
-.contact-group li a {
-    color:#F8AD47 !important;
-}
-
 /* responsive design */
 @media (max-width: 575.98px) {
     /* قائمة التنقل */
